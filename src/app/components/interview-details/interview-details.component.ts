@@ -30,7 +30,9 @@ export class InterviewDetailsComponent implements OnInit {
       image: '../../../assets/images/user.png',
       location: 'Mumbai',
       leads: 7,
-      captured: 3
+      captured: 3,
+      status: 1,
+      feedbackStatus: 0,
     },
     {
       id: 2,
@@ -39,7 +41,9 @@ export class InterviewDetailsComponent implements OnInit {
       image: '../../../assets/images/user.png',
       location: 'New Delhi',
       leads: 7,
-      captured: 3
+      captured: 3,
+      status: 1,
+      feedbackStatus: 0,
     },
     {
       id: 3,
@@ -48,7 +52,9 @@ export class InterviewDetailsComponent implements OnInit {
       image: '../../../assets/images/user.png',
       location: 'Mumbai',
       leads: 7,
-      captured: 3
+      captured: 3,
+      status: 1,
+      feedbackStatus: 1,
     }
   ]
 

@@ -9,9 +9,8 @@
         .main-header {
             background: $color-white;
             border: 1px solid #F3F3F3;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
+            display: grid;
+            grid-template-columns: 1fr 2.5fr 0.7fr 1.5fr;
 
             .heading {
                 padding: 10px;
@@ -27,9 +26,11 @@
         }
 
         .sub-header {
-            display: flex;
+            // display: flex;
             align-items: center;
-            justify-content: space-evenly;
+            // justify-content: space-evenly;
+            display: grid;
+    grid-template-columns: 1fr 2.5fr 1fr 1.5fr;
             margin: 19px 0 7px 0;
 
             .empty-column {
@@ -91,8 +92,10 @@
                 border: 1px solid $color-light-grey;
                 padding: 13px 0px;
                 align-items: center;
-                display: flex;
-                gap: 0;
+                // display: flex;
+                // gap: 0;
+                display: grid;
+    grid-template-columns: 1fr 2.5fr 1fr 1.5fr;
                 cursor: move;
 
                 .basic-data {
@@ -101,8 +104,10 @@
 
 
                 .candidate-actions{ 
-                    display: flex;
-                    align-items: center;
+                    // display: flex;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    align-items: flex-end;
                 }
             
                 .candidate-actions .info-col:not(:last-child) {
@@ -114,6 +119,7 @@
                     width: 114px;
                     display: block;
                     min-height: 58px;
+                    align-content: center;
             
                     .label{
                         font-family: $font-regular;
@@ -138,7 +144,7 @@
                     }
 
                     &:not(:first-child), &:not(:last-child){
-                        padding: 0 20px;
+                        padding-right: 20px;
                     }
                     &:first-child{
                         padding: 0;
@@ -146,7 +152,7 @@
                     }
                     &:last-child{
                         padding: 0;
-                        padding-left: 20px;
+                        // padding-left: 20px;
                     }
                 }
             

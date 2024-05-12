@@ -36,17 +36,18 @@
         <div>
           <div class="candidate-actions">
             <div class="info-col">
-              <img src="../../../assets/images/like.png" class="icon" />
-              <p class="label">Hire</p>
-              <p class="info">1 Jul 2018</p>
+              <img [src]="item.status==1 ? '../../../assets/images/like.png' :'../../../assets/images/thumbs-down.png'"
+                class="icon" />
+              <p class="label">{{item.status == 1 ? "Elligible" : "Not Elligible"}}</p>
+              <!-- <p class="inxfo">Elligibility</p> -->
             </div>
             <div class="info-col">
-              <p class="label">Awaiting Feedback</p>
+              <p class="label">{{item.feedbackStatus == 1 ? "Feedback Received" : "Awaiting Feedback"}}</p>
             </div>
             <div class="info-col">
               <img src="../../../assets/images/unselected.png" class="icon" />
               <p class="label">Undecided</p>
-              <p class="info">1 Jul 2018</p>
+              <!-- <p class="info">Joining Status</p> -->
             </div>
             <div class="info-col">
               <img src="../../../assets/images/calendar.png" class="icon" />
